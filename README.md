@@ -1,5 +1,4 @@
 # SelamCore
-# data base schema
 
 # Factory Management System Schema
 
