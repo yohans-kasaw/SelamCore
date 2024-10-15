@@ -2,6 +2,7 @@ import 'package:drift/drift.dart';
 
 import 'roles.dart';
 
+
 class Users extends Table {
   IntColumn get id => integer().autoIncrement()();
 

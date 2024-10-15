@@ -22,11 +22,9 @@ class Transactions extends Table {
       .customConstraint('REFERENCES inventory_price_histories(id) NOT NULL')();
   RealColumn get totalPrice =>
       real().named('total_price').check(totalPrice.isBiggerOrEqualValue(0))();
-  @ReferenceName('buyerId')
   IntColumn get buyerId => integer()
       .named('buyer_id')
       .customConstraint('REFERENCES users(id) NOT NULL')();
-  @ReferenceName('sellerId')
   IntColumn get sellerId => integer()
       .named('seller_id')
       .customConstraint('REFERENCES users(id) NOT NULL')();
